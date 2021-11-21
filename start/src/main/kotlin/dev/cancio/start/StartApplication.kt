@@ -1,9 +1,13 @@
 package dev.cancio.start
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.boot.runApplication
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 
 @SpringBootApplication
+@EntityScan("dev.cancio.core.model")
+@EnableJpaRepositories("dev.cancio.core.repository")
 class StartApplication
 
 fun main(args: Array<String>) {

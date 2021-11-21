@@ -1,6 +1,6 @@
-package dev.cancio.start.endpoint.repository
+package dev.cancio.core.repository
 
-import dev.cancio.start.endpoint.model.Debt
+import dev.cancio.core.model.Debt
 import org.springframework.data.repository.PagingAndSortingRepository
 
 interface DebtRepository: PagingAndSortingRepository<Debt,Long> {

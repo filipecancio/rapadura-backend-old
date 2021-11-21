@@ -1,4 +1,4 @@
-package dev.cancio.start.endpoint.model
+package dev.cancio.core.model
 
 import java.io.Serializable
 

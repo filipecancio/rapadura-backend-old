@@ -1,4 +1,4 @@
-package dev.cancio.start.endpoint.model
+package dev.cancio.core.model
 
 import lombok.*
 import org.jetbrains.annotations.NotNull
@@ -16,10 +16,10 @@ data class Debt(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
-    val id: Long,
+    val id: Long =0,
     @NotNull
     @Column(nullable = false)
-    val name: String
+    var name: String = "Debito"
 ): AbstractEntity {
     override fun getLongId() {
         TODO("Not yet implemented")

@@ -1,7 +1,7 @@
 package dev.cancio.start.endpoint.service
 
-import dev.cancio.start.endpoint.model.Debt
-import dev.cancio.start.endpoint.repository.DebtRepository
+import dev.cancio.core.model.Debt
+import dev.cancio.core.repository.DebtRepository
 import lombok.extern.slf4j.Slf4j
 import org.springframework.stereotype.Service
 
